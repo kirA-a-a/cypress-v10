@@ -18,3 +18,7 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+beforeEach(()=> {
+    cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
+})
