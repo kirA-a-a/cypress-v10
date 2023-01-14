@@ -15,6 +15,13 @@ describe('Все тесты входа в систему', ()=>{
         loginPage.checkError('Invalid credentials');
     });
 
+    it('Корректные данные', () => {
+        loginPage.enterUserName('Admin');
+        loginPage.enterPassword('admin123');
+        loginPage.clickLogin();
+        loginPage.checkEnterProfile();
+    });
+
     it('Не корректный пароль',  () => {
         loginPage.enterUserName('Admin');
         loginPage.enterPassword('admin');
@@ -22,10 +29,4 @@ describe('Все тесты входа в систему', ()=>{
         loginPage.checkError('Invalid credentials');
     });
 
-    it('Корректные данные', () => {
-        loginPage.enterUserName('Admin');
-        loginPage.enterPassword('admin123');
-        loginPage.clickLogin();
-        loginPage.checkEnterProfile();
-    });
 });

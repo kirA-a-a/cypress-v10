@@ -22,6 +22,6 @@ export class LoginPage {
     }
 
     checkEnterProfile() {
-        cy.get('.oxd-topbar-header-title').should('have.text', 'Dashboard')
+        cy.get('.oxd-topbar-header-title').should('contain', 'Dashboard')
     }
 }

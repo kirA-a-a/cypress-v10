@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pretest": "echo I am pretest",
+    "posttest": "echo I am postetst",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
